@@ -101,7 +101,7 @@ function lazy_commit() {
   git commit -m "$2"
   git push origin master
 }
-
+#
 #function quit {
 #  exit
 #}  
