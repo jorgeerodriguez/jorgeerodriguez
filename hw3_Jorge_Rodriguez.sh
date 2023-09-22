@@ -101,23 +101,9 @@ function lazy_commit() {
   git commit -m "$2"
   git push origin master
 }
-#
-#function quit {
-#  exit
-#}  
 
-#function e {
-#  echo $1 $2 $3 $4
-#}  
+lazy_commit hw3_Jorge_Rodriguez.sh "Adding homework 3 - Q9"
 
-#e Hello1 "Hello 2" Hello3 Hello4 hello5
-#e World
-
-#lazy_commit Hello1 Hello2 Hello3 Hello4 hello5
-lazy_commit hw3_Jorge_Rodriguez.sh "Adding homework 3"
-
-#quit
-#echo foo 
 echo " "
 echo " "
 echo "============> END Question 9 <======================"
