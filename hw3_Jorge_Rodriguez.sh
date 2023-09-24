@@ -47,6 +47,9 @@ echo " "
 
 
 echo "============> Question 4 <======================"
+median = sort -n sorted_words.txt | awk '{a[NR]=$1} END {if (NR%2==0) print (a[NR/2]+a[NR/2 + 1]); print(a[NR/2])}'
+echo "The Median is:  $median"
+return 1
 echo "============> END Question 4 <======================"
 echo " "
 echo " "
