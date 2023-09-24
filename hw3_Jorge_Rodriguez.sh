@@ -1,3 +1,4 @@
+# bash hw3_jorge_rodriguez.sh https://www.gutenberg.org/files/58785/58785-0.txt
 echo "----------------------------"
 echo "URL: $1"
 echo "----------------------------"
@@ -47,9 +48,9 @@ echo " "
 
 
 echo "============> Question 4 <======================"
-median = sort -n sorted_words.txt | awk '{a[NR]=$1} END {if (NR%2==0) print (a[NR/2]+a[NR/2 + 1]); print(a[NR/2])}'
-echo "The Median is:  $median"
-return 1
+median1 = echo "sort -n sorted_words.txt | awk '{a[NR]=$1} END {if (NR%2==0) print (a[NR/2]+a[NR/2 + 1]); print(a[NR])}'"
+#median1="500"
+echo "The Median is: $median1"
 echo "============> END Question 4 <======================"
 echo " "
 echo " "
