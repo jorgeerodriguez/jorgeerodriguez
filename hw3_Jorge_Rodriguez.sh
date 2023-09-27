@@ -95,27 +95,19 @@ echo "============> END Question 8 <======================"
 
 echo "============> Question 9 <======================"
 function lazy_commit() {
-echo "This is Question 9"
-if [ $# -ne 1 ]
-     then
-       echo "Please provide a txt file url"
-       echo "usage ./calculate_basic_stats.sh  url"
-       #exit with error
-       exit 1
-fi   
-
+  echo "This is Question 9"
   for var in "$@"
   do
     echo "$var"
+    echo "Arguments:$var"
+    echo "git add $var"
+    git add "$var"
   done
-  echo "Arguments: $1 and $2"
-  echo "git add $1"
-  git add "$1"
   git commit -m "This is Automation Lazy"
   git push origin master
 }
-lazy_commit
-lazy_commit hw3_Jorge_Rodriguez.sh, jorge1, jorge2, jorge3
+
+lazy_commit hw3_Jorge_Rodriguez.sh jorge1 jorge2 jorge3
 
 echo " "
 echo " "
